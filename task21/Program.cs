@@ -8,15 +8,15 @@ Console.Write("Введите координату x1 : ");
 int x1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите координату y1 : ");
 int y1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите координату z1: ");
-int z1 = Convert.ToInt32(Console.ReadLine());
+ Console.Write("Введите координату z1: ");
+ int z1 = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите координату x2 : ");
-int x2 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите координату y2 :  ");
-int y2 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите координату z2: ");
-int z2 = Convert.ToInt32(Console.ReadLine());
+ Console.Write("Введите координату x2 : ");
+ int x2 = Convert.ToInt32(Console.ReadLine());
+ Console.Write("Введите координату y2 :  ");
+ int y2 = Convert.ToInt32(Console.ReadLine());
+ Console.Write("Введите координату z2: ");
+ int z2 = Convert.ToInt32(Console.ReadLine());
 
 double Range(int x11, int y11, int z11, int x21, int y21, int z21)
 {
@@ -24,8 +24,8 @@ double Range(int x11, int y11, int z11, int x21, int y21, int z21)
     int rangeY = y11 - y21;
     int rangeZ = z11 - z21;
     double rangeXY = Math.Sqrt(Math.Pow(rangeX, 2) + Math.Pow(rangeY, 2));
-    double rangeXYZ = Math.Sqrt(Math.Pow(rangeXY, 2) + Math.Pow(rangeZ, 2));
-    return rangeXYZ;
+   double rangeXYZ = Math.Sqrt(Math.Pow(rangeXY, 2) + Math.Pow(rangeZ, 2));
+    return rangeXY;
 }
 
 double result = Range(x1, y1, z1, x2, y2, z2);
