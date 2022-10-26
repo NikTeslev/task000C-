@@ -29,4 +29,5 @@ double Range(int x11, int y11, int z11, int x21, int y21, int z21)
 }
 
 double result = Range(x1, y1, z1, x2, y2, z2);
-Console.Write($"Расстояние между точкой А ({x1},{y1},{z1}); и точкой B ({x2},{y2},{z2}) -> {Math.Round(result, 2, MidpointRounding.ToZero)}");
+Console.Write($"Расстояние между точкой А ({x1},{y1},{z1}); и точкой B ({x2},{y2},{z2}) -> 
+{Math.Round(result, 2, MidpointRounding.ToZero)}");

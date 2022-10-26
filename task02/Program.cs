@@ -1,12 +1,13 @@
-﻿Console.WriteLine("Hello");
+﻿Console.WriteLine("Сравнить, какое больше. Введите два числа");
 int number1 = Convert.ToInt32(Console.ReadLine());
 int number2 = Convert.ToInt32(Console.ReadLine());
-int kvadrat = number1 * number1;
-if(number2 == kvadrat)
+
+if(number2 > number1)
 {
-Console.WriteLine("Yes");
+Console.WriteLine($"{number2} Больше");
 }
-else
+else if(number1>number2)
 {
-Console.WriteLine("No");
+Console.WriteLine($"{number1} больше");
 }
+else Console.WriteLine("числа равны");
