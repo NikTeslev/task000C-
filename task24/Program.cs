@@ -7,51 +7,51 @@
 // 4 -> 10
 // 8 -> 36
 
-Console.WriteLine("Введите число : ");
-int num = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число : ");
+// int num = Convert.ToInt32(Console.ReadLine());
 
-int SumNumbers(int number)
-{
-    // int sum=0;        
-    // count=0;
-    // while (count <=number) { 
+// int SumNumbers(int number)
+// {
+//     // int sum=0;        
+//     // count=0;
+//     // while (count <=number) { 
 
-    //     sum+=count;
-    // }
-    // count++;
+//     //     sum+=count;
+//     // }
+//     // count++;
 
-    int sum=default;
-    for (int i = 1; i <= number; i++)
-    {
-        sum += i;
-    }
-    return sum;    
-}
-
-
-int result = SumNumbers(num);
-Console.WriteLine($"Сумма чисел от 1 до {num} => {result}");
+//     int sum=default;
+//     for (int i = 1; i <= number; i++)
+//     {
+//         sum += i;
+//     }
+//     return sum;    
+// }
 
 
+// int result = SumNumbers(num);
+// Console.WriteLine($"Сумма чисел от 1 до {num} => {result}");
 
-Console.Write("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine());
 
-int SumNumbers(int number)
-{
-    int sum = default; // 0
 
-    for (int i = 1; i <= number; i++)
-    {
-        //sum = sum + i;
-        sum += i;
-    }
-    return sum;
-}
+// Console.Write("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
 
-int sumNumbers = SumNumbers(num);
+// int SumNumbers(int number)
+// {
+//     int sum = default; // 0
 
-Console.WriteLine($"Сумма чисел от 1 до {num} = {sumNumbers}");
+//     for (int i = 1; i <= number; i++)
+//     {
+//         //sum = sum + i;
+//         sum += i;
+//     }
+//     return sum;
+// }
+
+// int sumNumbers = SumNumbers(num);
+
+// Console.WriteLine($"Сумма чисел от 1 до {num} = {sumNumbers}");
 
 
 //26
@@ -133,31 +133,31 @@ Console.WriteLine($"Сумма чисел от 1 до {num} = {sumNumbers}");
 // [1,0,1,1,0,1,0,0]
 
 
-Console.WriteLine("Введите количество элементов массива : ");
-int num = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите количество элементов массива : ");
+// int num = Convert.ToInt32(Console.ReadLine());
 
-int[] NameArray(int size)
-{
-    int[] array = new int[size]; //
-    Random rnd = new Random();
-    for (int i = 0; i < array.Length; i++)
-    {
-        array[i] = rnd.Next(0, 2);
-    }
-    return array;
-}
+// int[] NameArray(int size)
+// {
+//     int[] array = new int[size]; 
+//     Random rnd = new Random();
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = rnd.Next(0, 2);
+//     }
+//     return array;
+// }
 
-void PrintArray(int[] array)
-{   
-    Console.Write("[");
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write(array[i]);
-        if (i>array.Length-1) Console.Write(",");
-    }
-    Console.Write("]");
-}
+// void PrintArray(int[] array)
+// {   
+//     Console.Write("[");
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i]);
+//         if (i>array.Length-1) Console.Write(",");
+//     }
+//     Console.Write("]");
+// }
 
-int[] nameArray = NameArray(num);
-PrintArray(nameArray);
+// int[] nameArray = NameArray(num);
+// PrintArray(nameArray);
 
