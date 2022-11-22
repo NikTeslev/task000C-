@@ -8,14 +8,14 @@
 
 int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
 {
-    int[,] array = new int[rows, columns];
+    int[,] matrix = new int[rows, columns];
     Random rnd = new Random();
 
     for (int i = 0; i < array.GetLength; i++)
     {
         for (int j = 0; j < array.GetLength; j++)
         {
-            array[i, j] = rnd.Next(min, max + 1);
+            matrix[i, j] = rnd.Next(min, max + 1);
         }
     }
 }
@@ -33,3 +33,19 @@ void PrintMatrix (int[,] matrix)
 }
 int[,] array2d = CreateMatrixRndInt(3, 3, -10, 10);
 PrintMatrix(array2d);
+
+
+/*void PrintMatrix(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        Console.Write("|");
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            if (j < matrix.GetLength(1) - 1) Console.Write($"{matrix[i,j], 5} |");
+            else Console.Write($"{matrix[i,j], 5}");
+        }
+        Console.WriteLine(" |");
+    }
+}
+МЕТОД ДЛЯ ВЫВОДА 2Х МЕРНОГО МАССИВА*/ 
